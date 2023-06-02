@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react-icons/fa";
 
 export const Modal = () => {
-  return (
-    <div>Modal</div>
-  )
-}
+  return <div>Modal</div>;
+};
