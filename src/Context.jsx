@@ -27,10 +27,10 @@ export const AppProvider = ({ children }) => {
       value={{
         isSidebarOpen,
         isModalOpen,
-        openSidebar,
-        closeSidebar,
         openModal,
+        openSidebar,
         closeModal,
+        closeSidebar,
       }}>
       {children}
     </AppContext.Provider>
