@@ -13,6 +13,28 @@ export const Sidebar = () => {
           <FaTimes />
         </button>
       </div>
+      <ul className="links">
+        {links.map((link) => {
+          const { id, url, text, icon } = link;
+          return (
+            <li key={id}>
+              <a href={url}>
+                {icon} {text}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+      <ul className="social-links">
+        {social.map((link) => {
+          const { id, url, text, icon } = link;
+          return (
+            <li key={id}>
+              <a href={url}>{icon}</a>
+            </li>
+          );
+        })}
+      </ul>
     </aside>
   );
 };
